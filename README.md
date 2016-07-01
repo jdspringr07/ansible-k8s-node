@@ -1,15 +1,8 @@
-k8s-node
-=========
+# ahuffman.k8s-node
 
 An ansible role to configure kubernetes nodes/minions on Red Hat Enterpise Linux based hosts.
 
-Requirements
-------------
-
-N/A
-
-Role Variables
---------------
+## Role Variables
 
 ###Defaults:
 ####docker settings
@@ -47,13 +40,8 @@ Role Variables
     - docker
     - kubernetes-node
 
-Dependencies
-------------
+## Example Playbook
 
-N/A
-
-Example Playbook
-----------------
 Bare minimum requirements where 192.168.122.20 is the IP address of the master server.  The defaults take care of the rest.  See k8s-master bare minimum requirements to ensure the configuration lines up with the defaults there.
 
     - hosts: kubernetes_nodes
@@ -63,12 +51,10 @@ Bare minimum requirements where 192.168.122.20 is the IP address of the master s
       roles:
          - k8s-node
 
-License
--------
+## License
 
-MIT
+[MIT](LICENSE)
 
-Author Information
-------------------
+## Author Information
 
-Andrew J. Huffman
+[Andrew J. Huffman](https://github.com/ahuffman)
